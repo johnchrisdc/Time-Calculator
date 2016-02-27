@@ -262,7 +262,7 @@ public class Main extends javax.swing.JFrame {
         String time_in = timein_hour.getSelectedItem().toString() + ":" + timein_min.getSelectedItem().toString();
         String time_out = (Integer.valueOf(timeout_hour.getSelectedItem().toString()) + 12)  + ":" + timeout_min.getSelectedItem().toString();
         
-        System.out.println(time_out);
+        //System.out.println(time_out);
         
         SimpleDateFormat format = new SimpleDateFormat("HH:mm");
         try {
@@ -291,7 +291,7 @@ public class Main extends javax.swing.JFrame {
 
             
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("http://stackoverflow.com/search?q" + e.toString().replace(" ", "+"));
         }
         
     }//GEN-LAST:event_button_computeActionPerformed
